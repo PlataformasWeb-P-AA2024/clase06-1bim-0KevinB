@@ -1,6 +1,7 @@
 from sqlalchemy.orm import sessionmaker
 
 from crear_base import Saludo
+# Conexión a la base de datos 
 from configuracion import engine
 
 Session = sessionmaker(bind=engine)

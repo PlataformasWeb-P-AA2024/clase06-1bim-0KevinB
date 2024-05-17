@@ -63,6 +63,7 @@ print(docentes)
 print("--------------------------------")
 # Uso de in_
 
+# Lista en el filter (Pregunta de examen)
 docentes = session.query(Docente).filter(Docente.apellido.in_(['Minga', 'Borrero'])).order_by(Docente.nombre).all()
 
 print(docentes)

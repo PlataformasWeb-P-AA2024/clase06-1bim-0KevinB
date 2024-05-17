@@ -16,7 +16,6 @@ from sqlalchemy import Column, Integer, String
 
 class Saludo(Base):
     __tablename__ = 'saludos'
-
     id = Column(Integer, primary_key=True)
     mensaje = Column(String(200))
     tipo = Column(String(200))
